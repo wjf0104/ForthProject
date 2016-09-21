@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slide</title>
+	<script src="jquery-2.0.2.js"></script>
+	<style>
+	*{margin: 0; padding：0}
+	.chane{color: #fff;background: #e0e0e0;border:1px solid red;width: 200px;}
+	.big{width: 200px; height: 500px; border: 1px solid #000; color: yellow; }
+	ul{ list-style:none; margin:0; padding: 0;}
+	ul li{ width: 100px; height: 30px; background: red; float: left; border:1px solid #fff; text-align: center; line-height: 30px; cursor: pointer;}
+	div{border:1px solid red;}
+	</style>
+
+</head>
+<body>
+	<!-- <input type="button" value="点击滑动">
+	<img src="images/1.jpg" alt="">
+	<ul class="ul1">
+		  <li class="li1">John
+				<ul class="ul2">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ul>
+		  </li>
+		  <li class="li1">Karl</li>
+		  <li class="li1">Brandon</li></ul> -->
+		 <!--  <p>I would like to say: </p>
+		  <div></div><div></div> -->
+		  <!-- <button id="run">Run</button><div></div> -->
+	<!-- <ul>
+	  <li>Glen</li>
+	</ul> -->
+	<!-- <b>hello</b><p>me</p> -->
+<!-- 	<h4>This is a title</h4>
+	<p>这里是中国</p> -->
+	<!-- <p>I would like to say: </p>
+	<div id="foo">box</div> -->
+	<!-- <p>Hello<p>Hello</p></p><p>cruel</p><p>World</p> -->
+	<!-- <p>Hello, <span>Person</span> <a href="#">and person</a></p> -->
+	<button>Clone Me!</button>
+	<script>
+		$(document).ready(function(){
+			// $('input').click(function (){
+			// 	$('img').slideToggle('1000',function(){
+			// 		alert('我走了')
+			// 	});
+			// })
+			// $('ul li:only-child').clone('color','red');
+			// // $('b').clone().prependTo('p');
+			// $('h4').click(function (){
+			// 		$(this).toggleClass('chane');
+			// 		$('p').toggleClass('big');
+			// 		$('p').slideDown('slow');
+			// })
+			// $('.li1').hover(function(){
+			// 	$(this).children('ul').stop().slideToggle();
+			// })
+			// $("p").appendTo("div");
+			// $("#run").click(function(){
+  	// 		$("div:not(:animated)").animate({ left: "+=20" }, 1000);
+
+		// $("p").prepend("#foo");
+		// $("p").wrapAll("<div></div>");
+		// $("p").empty();
+			$("button").click(function(){
+	 			$(this).clone(true).insertAfter(this);
+			});
+			});
+
+	</script>
+</body>
+</html>
